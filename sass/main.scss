@@ -1,6 +1,7 @@
 @import './utils/vars';
 @import './utils/modern-normalize';
 @import './utils/basic';
+@import './utils/placeholder';
 
 // Header
 
@@ -40,3 +41,8 @@
 @import './components/page-footer/footer-logo';
 @import './components/page-footer/join';
 @import './components/page-footer/footer-form';
+
+// Portfolio
+
+@import './components/portfolio-main/buttons';
+@import './components/portfolio-main/card-set';

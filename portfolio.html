@@ -8,70 +8,71 @@
   <title>Web studio</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="body-portfolio">
   <!-- Шапка сайту -->
   <header class="head">
-    <div class="container header">
-      <a href="./index.html" class="logo-primary"> <span class="logo-header">Web</span>Studio</a>
+        <div class="container header">
+            <a href="./index.html" class="logo--primary">
+                <span class="logo-header">Web</span>Studio</a>
 
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a href="./index.html" class="nav-link">Студия</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="./portfolio.html" class="nav-link current">Портфолио</a>
-          </li>
-          <li class="nav-list-item"><a href="" class="nav-link">Контакты</a></li>
-        </ul>
-      </nav>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="./index.html" class="nav__link">Студия</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
 
-      <ul class="contacts-list">
-        <li class="contacts-list-item">
-          <a href="mailto:info@devstudio.com" class="contacts-link">
-            <svg class="mail-icon">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="contacts-list-item">
-          <a href="tel:+380961111111" class="contacts-link">
-            <svg class="telephone-icon">
-              <use href="./images/icons.svg#icon-telephone"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
-    </div>
-  </header>
+            <ul class="contacts-list">
+                <li class="contacts-list__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
+                        <svg class="mail-icon">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contacts-list__item">
+                    <a href="tel:+380961111111" class="contacts__link">
+                        <svg class="telephone-icon">
+                            <use href="./images/icons.svg#icon-telephone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
 
   <!-- Унікальний контент сторінки -->
   <main>
     <section class="portfolio-section">
       <div class="container">
         <ul class="btn-list">
-          <li class="btn-list-item"><button type="button" class="portfolio-btn">Все</button></li>
-          <li class="btn-list-item">
-            <button type="button" class="portfolio-btn">Веб-сайты</button>
+          <li class="btn-list__item"><button type="button" class="btn-list__button">Все</button></li>
+          <li class="btn-list__item">
+            <button type="button" class="btn-list__button">Веб-сайты</button>
           </li>
-          <li class="btn-list-item">
-            <button type="button" class="portfolio-btn">Приложения</button>
+          <li class="btn-list__item">
+            <button type="button" class="btn-list__button">Приложения</button>
           </li>
-          <li class="btn-list-item">
-            <button type="button" class="portfolio-btn">Дизайн</button>
+          <li class="btn-list__item">
+            <button type="button" class="btn-list__button">Дизайн</button>
           </li>
-          <li class="btn-list-item">
-            <button type="button" class="portfolio-btn">Маркетинг</button>
+          <li class="btn-list__item">
+            <button type="button" class="btn-list__button">Маркетинг</button>
           </li>
         </ul>
 
         <ul class="portfolio-list">
-          <li class="portfolio-list-item">
-            <a href="" class="portfolio-link">
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link">
               <div class="thumb">
                 <img class="portfolio-img" src="./images/portfolio/portf1.jpg" alt="Ноутбук" width="370" />
                 <div class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</div>
@@ -82,8 +83,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list-item">
-            <a href="" class="portfolio-link">
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link">
               <div class="thumb">
                 <img class="portfolio-img" src="./images/portfolio/portf2.jpg" alt="Ноутбук" width="370" />
                 <div class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</div>
@@ -94,8 +95,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list-item">
-            <a href="" class="portfolio-link"><div class="thumb">
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link"><div class="thumb">
                 <img class="portfolio-img" src="./images/portfolio/portf3.jpg" alt="Ноутбук" width="370" />
                 <div class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</div>
               </div>
@@ -105,8 +106,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list-item">
-            <a href="" class="portfolio-link"><div class="thumb">
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link"><div class="thumb">
                 <img class="portfolio-img" src="./images/portfolio/portf4.jpg" alt="Ноутбук" width="370" />
                 <div class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</div>
               </div>
@@ -116,8 +117,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list-item">
-            <a href="" class="portfolio-link"><div class="thumb">
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link"><div class="thumb">
                 <img class="portfolio-img" src="./images/portfolio/portf5.jpg" alt="Ноутбук" width="370" />
                 <div class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</div>
               </div>
@@ -127,8 +128,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list-item">
-            <a href="" class="portfolio-link"><div class="thumb">
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link"><div class="thumb">
                 <img class="portfolio-img" src="./images/portfolio/portf6.jpg" alt="Ноутбук" width="370" />
                 <div class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</div>
               </div>
@@ -138,8 +139,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list-item">
-            <a href="" class="portfolio-link"><div class="thumb">
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link"><div class="thumb">
                 <img class="portfolio-img" src="./images/portfolio/portf7.jpg" alt="Ноутбук" width="370" />
                 <div class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</div>
               </div>
@@ -149,8 +150,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list-item">
-            <a href="" class="portfolio-link"><div class="thumb">
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link"><div class="thumb">
                 <img class="portfolio-img" src="./images/portfolio/portf8.jpg" alt="Ноутбук" width="370" />
                 <div class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</div>
               </div>
@@ -160,8 +161,8 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list-item">
-            <a href="" class="portfolio-link"><div class="thumb">
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link"><div class="thumb">
                 <img class="portfolio-img" src="./images/portfolio/portf9.jpg" alt="Ноутбук" width="370" />
                 <div class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</div>
               </div>
@@ -180,17 +181,17 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="address-container">
-        <a href="./index.html" class="logo-secondary"><span class="logo-header">Web</span>Studio</a>
+        <a href="./index.html" class="logo--secondary"><span class="logo-header">Web</span>Studio</a>
         <address class="address">
           <ul class="contacts-footer">
-            <li class="contacts-footer-item">
+            <li class="contacts-footer__item">
               <a href="" class="address-link">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li class="contacts-footer-item">
-              <a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+            <li class="contacts-footer__item">
+              <a href="mailto:info@devstudio.com" class="contacts-footer__link">info@devstudio.com</a>
             </li>
-            <li class="contacts-footer-item">
-              <a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a>
+            <li class="contacts-footer__item">
+              <a href="tel:+380961111111" class="contacts-footer__link">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
@@ -198,30 +199,30 @@
       <div class="join-container">
         <h3 class="join-title">присоединяйтесь</h3>
         <ul class="join-list">
-          <li class="join-list-item">
-            <a href="" class="join-link">
-              <svg class="join-icon">
+          <li class="join-list__item">
+            <a href="" class="join-list__link">
+              <svg class="join-list__icon">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="join-list-item">
-            <a href="" class="join-link">
-              <svg class="join-icon">
+          <li class="join-list__item">
+            <a href="" class="join-list__link">
+              <svg class="join-list__icon">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="join-list-item">
-            <a href="" class="join-link">
-              <svg class="join-icon">
+          <li class="join-list__item">
+            <a href="" class="join-list__link">
+              <svg class="join-list__icon">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="join-list-item">
-            <a href="" class="join-link">
-              <svg class="join-icon">
+          <li class="join-list__item">
+            <a href="" class="join-list__link">
+              <svg class="join-list__icon">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </a>
@@ -234,7 +235,7 @@
             <input class="footer-input" type="email" name="email" placeholder="E-mail" />
           <button class="footer-btn" type="submit">
             Подписаться
-            <svg class="footer-icon">
+            <svg class="footer-btn__icon">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>

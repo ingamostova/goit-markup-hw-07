@@ -1,17 +1,5 @@
-.logo-primary {
-    color: $logo-color;
+.logo--primary {
+    @extend %logo;
     margin-right: 93px;
-}
-
-.logo-header {
-    color: $secondary-title-color;
-}
-
-.logo,
-.logo-primary {
-    display: block;
-    font-family: $font-family-raleway;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
+    color: $logo-color;
 }
